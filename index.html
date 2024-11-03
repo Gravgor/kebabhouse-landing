@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Kebab House Poznań - Najlepsze kebaby i zapiekanki</title>
+    <meta name="title" content="Kebab House Poznań - Najlepsze kebaby i zapiekanki">
+    <meta name="description" content="Odkryj wyjątkowe smaki w Kebab House Poznań. Świeże kebaby, zapiekanki i dania na zamówienie. Zamów online lub odwiedź nas na Wichrowym Wzgórzu 121.">
+    <meta name="keywords" content="kebab poznań, kebab house, zapiekanki poznań, dostawa kebab, wichrowe wzgórze kebab">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kebabhouse.pl/">
+    <meta property="og:title" content="Kebab House Poznań - Najlepsze kebaby i zapiekanki">
+    <meta property="og:description" content="Odkryj wyjątkowe smaki w Kebab House Poznań. Świeże kebaby, zapiekanki i dania na zamówienie.">
+    <meta property="og:image" content="/images/kebab-house-social.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kebabhouse.pl/">
+    <meta property="twitter:title" content="Kebab House Poznań - Najlepsze kebaby i zapiekanki">
+    <meta property="twitter:description" content="Odkryj wyjątkowe smaki w Kebab House Poznań. Świeże kebaby, zapiekanki i dania na zamówienie.">
+    <meta property="twitter:image" content="/images/kebab-house-social.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF4D4D',    // Vibrant red
+                        secondary: '#1A1A1A',   // Deep black
+                        accent: '#FFD700',      // Rich gold
+                        tertiary: '#2C3E50',    // Deep blue-gray
+                        success: '#4CAF50',     // Green for vege options
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .bg-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.343 0L13.857 8.485 15.272 9.9l7.9-7.9h-.83L27.03 0h-4.687zm16.97 0L47.8 8.485 46.384 9.9l-7.9-7.9h.828L33.626 0h5.687zm-12.284 0l9.9 9.9-1.415 1.414L25.272 0h1.742zm8.97 0l-.83.828L42.8 8.485 41.384 9.9l-7.9-7.9h2.83zM0 0l.828.828L0 2.243V0zm54.627 41.415L54.627 60h-2.827L40.485 48.657l1.414-1.414L54.627 60v-2.828L52.8 55.757l1.414-1.414-1.414-1.414L50.142 50.2l1.414-1.414 1.414 1.414L54.627 51.8v-2.828l-2.828-2.828 1.414-1.414 1.414 1.414.828-.828v.828l.828-.828L54.627 41.415zm-2.827 5.657l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-1.414-1.414l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-2.828 2.828l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-1.414-1.414l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-2.828 2.828l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zM40.485 49.07l1.414 1.415-1.414 1.414-1.414-1.414 1.414-1.414zM0 41.415l.828-.828V40h-.828v1.415zm0 5.657l.828-.828V45h-.828v2.072zm0 5.657l.828-.828V50h-.828v2.729zm0 5.657l.828-.828V56h-.828v1.415zm0-11.314l.828-.828v-.828h-.828v1.656zm54.627-5.657L54.627 40h-.828v.587l.828-.828V40h-.828v.587L52.8 39.587l1.414-1.414 1.414 1.414-1.414 1.414.828.828v-.828l-.828.828.828-.828v.828l.828-.828zm-2.827 5.657l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-1.414-1.414l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-2.828 2.828l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-1.414-1.414l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zm-2.828 2.828l1.414 1.414-1.414 1.414-1.414-1.414 1.414-1.414zM40.485 42.657L41.9 44.07l-1.414 1.414-1.414-1.414 1.414-1.414z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .menu-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation - Simplified and Conversion-Focused -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="/images/logo.png" alt="Kebab House" class="h-14 w-auto">
+                    <div>
+                        <h1 class="text-2xl font-bold text-primary">KEBAB HOUSE</h1>
+                        <p class="text-sm text-gray-600">Poznań, Wichrowe Wzgórze</p>
+                    </div>
+                </a>
+
+                <!-- Primary Actions - Desktop -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <!-- Opening Status -->
+                    <div class="flex items-center px-4 py-2 bg-success/10 text-success rounded-full">
+                        <span class="w-2 h-2 bg-success rounded-full mr-2"></span>
+                        <span class="text-sm font-medium">Otwarte do 22:00</span>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <a href="tel:509966900" 
+                       class="flex items-center space-x-2 text-gray-700 hover:text-primary transition-colors">
+                        <i class="fas fa-phone"></i>
+                        <span class="font-medium">509 966 900</span>
+                    </a>
+
+                    <!-- Primary CTA -->
+                    <a href="#order" 
+                       class="flex items-center px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-red-600 transition-colors">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        Zamów online -20%
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 text-gray-600 hover:text-primary transition-colors" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="hidden lg:hidden" id="mobile-menu">
+            <div class="bg-white border-t border-gray-100 py-4 px-4 space-y-4">
+                <div class="flex justify-between items-center px-2">
+                    <div class="flex items-center text-success">
+                        <span class="w-2 h-2 bg-success rounded-full mr-2"></span>
+                        <span class="text-sm">Otwarte do 22:00</span>
+                    </div>
+                    <a href="tel:509966900" class="text-primary font-medium">
+                        <i class="fas fa-phone mr-1"></i>
+                        509 966 900
+                    </a>
+                </div>
+                <a href="#order" 
+                   class="block text-center py-3 bg-primary text-white rounded-full font-medium hover:bg-red-600 transition-colors">
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    Zamów online -20%
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 bg-gradient-to-br from-primary via-red-600 to-red-700 bg-pattern relative overflow-hidden">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/20"></div>
+        
+        <!-- Main Content -->
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Left Column - Call to Action -->
+                <div class="text-white lg:w-1/2 mb-12 lg:mb-0">
+                    <!-- Main Heading -->
+                    <h1 class="font-display text-6xl font-bold leading-tight mb-6 animate-fade-in">
+                        Głodny? Zamów 
+                        <span class="text-accent block mt-2">w 2 minuty</span>
+                    </h1>
+                    
+                    <!-- Value Propositions -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-xl text-gray-100">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            <span>Dostawa w 30 minut lub 50% rabatu</span>
+                        </div>
+                        <div class="flex items-center text-xl text-gray-100">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            <span>Świeże składniki każdego dnia</span>
+                        </div>
+                        <div class="flex items-center text-xl text-gray-100">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            <span>Ponad 1000 zadowolonych klientów</span>
+                        </div>
+                    </div>
+
+                    <!-- Primary CTAs -->
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#menu" 
+                           class="group bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-accent hover:text-secondary transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <span class="flex items-center">
+                                Zobacz menu
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </span>
+                        </a>
+                        <a href="tel:509966900" 
+                           class="group bg-accent text-secondary px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <span class="flex items-center">
+                                <i class="fas fa-phone mr-2"></i>
+                                509 966 900
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="mt-8 flex items-center space-x-6">
+                        <div class="flex items-center">
+                            <div class="flex text-accent">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-sm">4.9/5 (287 opinii)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="/images/google-reviews.png" alt="Google Reviews" class="h-8">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Hero Image -->
+                <div class="lg:w-1/2 relative">
+                    <!-- Floating Effect Background -->
+                    <div class="absolute -inset-4 bg-white/10 rounded-full blur-3xl"></div>
+                    
+                    <!-- Main Image -->
+                    <img src="/images/hero-kebab.png" 
+                         alt="Kebab House speciality" 
+                         class="relative rounded-3xl shadow-2xl animate-float">
+                    
+                    <!-- Promotional Badge -->
+                    <div class="absolute -bottom-4 -right-4 bg-accent text-secondary px-6 py-3 rounded-full font-bold shadow-lg transform rotate-12">
+                        <span class="text-lg">-20% Online!</span>
+                    </div>
+
+                    <!-- Quick Order Floating Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl transform -rotate-6">
+                        <div class="flex items-center space-x-3">
+                            <img src="/images/delivery-icon.png" alt="Fast Delivery" class="w-12 h-12">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Szybka dostawa</p>
+                                <p class="text-sm text-gray-600">Średni czas: 22 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Separator -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg class="relative block w-full h-20 text-gray-50" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.92,146.53,111.31,216.6,92.83,286.68,74.34,369.57,33.29,448.57,16.19Z" class="fill-current"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Menu Section - Simplified -->
+    <section id="menu" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nasze Menu</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Świeże składniki, domowe sosy i tradycyjne receptury. 
+                    Zamów online z rabatem 20%
+                </p>
+            </div>
+
+            <!-- Simple Category Tabs -->
+            <div class="flex justify-center mb-12 space-x-4 overflow-x-auto pb-4">
+                <button class="category-btn px-6 py-2 rounded-full bg-primary text-white font-medium hover:bg-red-600 transition-colors">
+                    Popularne
+                </button>
+                <button class="category-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors">
+                    Kebaby
+                </button>
+                <button class="category-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors">
+                    Zapiekanki
+                </button>
+                <button class="category-btn px-6 py-2 rounded-full bg-success text-white font-medium hover:bg-green-600 transition-colors">
+                    Vege
+                </button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <img src="/images/kebab-tortilla.jpg" 
+                             alt="Kebab w Tortilli" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-accent text-secondary px-3 py-1 rounded-full text-sm font-bold">
+                            Bestseller
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Kebab w Tortilli</h3>
+                                <p class="text-gray-600 text-sm">Świeże mięso, warzywa, sos</p>
+                            </div>
+                            <span class="text-2xl font-bold text-primary">27 zł</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <!-- Size Options -->
+                            <div class="flex space-x-2">
+                                <button class="px-3 py-1 text-sm border border-gray-200 rounded-full text-gray-600 hover:border-primary hover:text-primary transition-colors">
+                                    Mały
+                                </button>
+                                <button class="px-3 py-1 text-sm border border-primary bg-primary/5 rounded-full text-primary">
+                                    Duży
+                                </button>
+                            </div>
+                            <!-- Quick Order Button -->
+                            <button class="flex items-center px-4 py-2 bg-primary text-white rounded-full hover:bg-red-600 transition-colors">
+                                <i class="fas fa-plus mr-2"></i>
+                                Dodaj
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Menu Items (similar structure) -->
+            </div>
+
+            <!-- View Full Menu Button -->
+            <div class="text-center mt-12">
+                <button class="inline-flex items-center px-8 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition-colors">
+                    Zobacz pełne menu
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Card Section -->
+    <section class="py-20 bg-gradient-to-br from-primary via-red-800 to-red-900 relative overflow-hidden">
+        <!-- Pattern Overlay -->
+        <div class="absolute inset-0 bg-pattern opacity-10"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Left Content -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold text-white mb-8">Odbierz kartę VIP!</h2>
+                    
+                    <!-- VIP Benefits List -->
+                    <div class="space-y-4 text-lg text-white/90 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-secondary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold mb-1">Dokonaj zakupu 9 razy</h3>
+                                <p class="text-white/70">odbierz kartę w prezencie</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-percent text-secondary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold mb-1">Stały rabat 20% na całe menu</h3>
+                                <p class="text-white/70">za każdym razem gdy zamawiasz</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-gift text-secondary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold mb-1">Bierz udział w konkursach</h3>
+                                <p class="text-white/70">wygraj atrakcyjne nagrody</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <i class="fas fa-star text-secondary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold mb-1">Odbierz kartę VIP</h3>
+                                <p class="text-white/70">już dzisiaj zacznij zbierać!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button class="bg-accent text-secondary px-8 py-4 rounded-full font-bold hover:bg-yellow-400 transition-colors transform hover:scale-105">
+                        Rozpocznij zbieranie punktów
+                    </button>
+                </div>
+
+                <!-- Right Content - VIP Card -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <!-- Card Background Glow -->
+                        <div class="absolute -inset-4 bg-accent/20 rounded-3xl blur-2xl"></div>
+                        
+                        <!-- VIP Card Image -->
+                        <div class="relative transform hover:scale-105 transition-transform duration-300">
+                            <img src="/images/kebab-house-karta.jpg" 
+                                 alt="Karta VIP Kebab House" 
+                                 class="w-[400px] rounded-2xl shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Wave -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg class="relative block w-full h-20 text-gray-50" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.92,146.53,111.31,216.6,92.83,286.68,74.34,369.57,33.29,448.57,16.19Z" class="fill-current"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <h2 class="text-4xl font-bold text-primary text-center mb-16">
+                Sprawdź, co mówią o nas klienci
+            </h2>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-full flex flex-col">
+                        <!-- Quote Icon -->
+                        <div class="text-6xl text-primary opacity-20 mb-4">
+                            "
+                        </div>
+                        
+                        <!-- Testimonial Content -->
+                        <div class="flex-grow">
+                            <p class="text-gray-600 mb-6">
+                                Duże porcje, zawsze świeże. Super miejsce na oglądanie meczy!
+                            </p>
+                        </div>
+                        
+                        <!-- Author -->
+                        <div class="mt-auto">
+                            <p class="font-bold text-gray-900 text-lg">Kacper</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-full flex flex-col">
+                        <!-- Quote Icon -->
+                        <div class="text-6xl text-primary opacity-20 mb-4">
+                            "
+                        </div>
+                        
+                        <!-- Testimonial Content -->
+                        <div class="flex-grow">
+                            <p class="text-gray-600 mb-6">
+                                Najlepsze zapiekanki w całym Poznaniu! Uwielbiam. Polecam!
+                            </p>
+                        </div>
+                        
+                        <!-- Author -->
+                        <div class="mt-auto">
+                            <p class="font-bold text-gray-900 text-lg">Ada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-full flex flex-col">
+                        <!-- Quote Icon -->
+                        <div class="text-6xl text-primary opacity-20 mb-4">
+                            "
+                        </div>
+                        
+                        <!-- Testimonial Content -->
+                        <div class="flex-grow">
+                            <p class="text-gray-600 mb-6">
+                                Zawsze dostaję to, co chcę. Moje ulubione: kebab i bigos 😊
+                                <br>
+                                Super miła obsługa!
+                            </p>
+                        </div>
+                        
+                        <!-- Author -->
+                        <div class="mt-auto">
+                            <p class="font-bold text-gray-900 text-lg">Dominika</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <h2 class="text-4xl font-bold text-center mb-16">
+                KEBAB HOUSE twoje miejsce spotkań
+            </h2>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Transmisje Meczy -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-tv text-3xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">TRANSMISJE MECZY</h3>
+                            <p class="text-gray-600">
+                                Zaproś znajomych na wspólne oglądanie meczy, zawodów! Już nie musicie jechać do centrum miasta. Imprezy sportowe będziecie mogli świętować wspólnie jedząc pyszne jedzenie z KEBAB HOUSE 😊
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Happy Hours -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-clock text-3xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">HAPPY HOURS</h3>
+                            <p class="text-gray-600">
+                                Każdego dnia możesz skorzystać ze "szczęśliwych godzin" i kupić jedzenie ze specjalną zniżką! Liczba porcji niestety jest ograniczona.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spotkania Rodzinne -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-users text-3xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">SPOTKANIA RODZINNE</h3>
+                            <p class="text-gray-600">
+                                Szukasz miejsca do 25 osób na imieniny, urodziny, komunię lub inne wydarzenie? Mamy TO! Wynajmij u nas salke na godziny, dzień lub nawet noc 🌙 Nie chcesz gotować? Zamów u nas catering! Ugotujemy to, co sobie zażyczysz 😊
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karta Podarunkowa -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-gift text-3xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">KARTA PODARUNKOWA</h3>
+                            <p class="text-gray-600">
+                                Przez żołądek do serca ❤️ Kup kartę podarunkową i podaruj swoim bliskim. Od tej pory nie muszą już gotować w domu. Nie chcesz gotować obiadu? Zamów kartę już dziś!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wspieramy Seniorów -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-walking text-3xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">WSPIERAMY SENIORÓW</h3>
+                            <p class="text-gray-600">
+                                Martwisz się, że nie masz czasu, aby ugotować obiad swoim rodzicom lub dziadkom? Zrobimy to za Ciebie! Zamów dla nich miesięczny karnet na pyszną zupę w cenie jedyne 8zł za porcję lub voucher na dowolne jedzenie. SENIORZY! Zapraszamy na również na herbatę, sałatki, zupy i pyszny bigos. Zagrajmy razem w karty lub pośpiewajmy!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strefa Ucznia i Studenta -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-graduation-cap text-3xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary mb-3">STREFA UCZNIA I STUDENTA</h3>
+                            <p class="text-gray-600">
+                                Odbierz kartę VIP! Zbieraj pieczątki! Odbierz tortillę w prezencie! Nie zdążyłeś odrobić lekcji i zjeść śniadania? Wpadnij do nas! W wygodnym fotelu lub na sofie uzupełnisz zadania domowe a my w tym czasie przygotujemy dla Ciebie pysznego kebaba, zapiekankę, hot doga lub chrupiące frytki 😊
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Często zadawane pytania:</h2>
+            
+            <!-- FAQ Accordion -->
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+                        <span class="font-medium text-left">Gdzie można się nas znaleźć?</span>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 border-t border-gray-200">
+                        <p>Znajdziesz nas na Osiedlu Wichrowe Wzgórze nr 121, przy markecie NEWA.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+                        <span class="font-medium">Czy w lokalu można zjeść na miejscu? Czy są stoliki?</span>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 border-t border-gray-200 hidden">
+                        <p>Tak, posiadamy miejsca siedzące i stoliki dla naszych gości.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+                        <span class="font-medium">Czy można płacić kartą?</span>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 border-t border-gray-200 hidden">
+                        <p>Tak, akceptujemy płatności kartą oraz gotówką.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+                        <span class="font-medium">Czy można wynająć lokal na spotkanie?</span>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="p-4 bg-gray-50 border-t border-gray-200 hidden">
+                        <p>Tak, oferujemy możliwość wynajęcia lokalu na różne okazje. Skontaktuj się z nami po szczegóły.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Map -->
+    <footer class="bg-gray-900 text-white">
+        <!-- Main Footer Content -->
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Kontakt</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt w-6 text-accent"></i>
+                            <span class="ml-2">Os. Wichrowe Wzgórze 121, Poznań</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone w-6 text-accent"></i>
+                            <a href="tel:509966900" class="ml-2 hover:text-accent">509 966 900</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock w-6 text-accent"></i>
+                            <span class="ml-2">Pon-Nd: 12:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Menu</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#menu" class="hover:text-accent">Kebab</a></li>
+                        <li><a href="#menu" class="hover:text-accent">Zapiekanki</a></li>
+                        <li><a href="#menu" class="hover:text-accent">Hot-Dogi</a></li>
+                        <li><a href="#menu" class="hover:text-accent">Napoje</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Social Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="md:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-6">Lokalizacja</h3>
+                    <div class="h-48 bg-gray-800 rounded-lg overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.2963704862436!2d16.9842147!3d52.4067483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDI0JzI0LjMiTiAxNsKwNTknMDMuMiJF!5e0!3m2!1spl!2spl!4v1629789876543!5m2!1spl!2spl"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-400">© 2024 Kebab House. Wszelkie prawa zastrzeżone.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="text-sm text-gray-400 hover:text-accent">Polityka prywatności</a>
+                        <a href="#" class="text-sm text-gray-400 hover:text-accent">Regulamin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Category buttons
+    document.querySelectorAll('.category-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            
+            // Add active class to clicked button
+            this.classList.remove('bg-gray-200', 'text-gray-700');
+            this.classList.add('bg-primary', 'text-white');
+        });
+    });
+
+    // FAQ Accordion functionality
+    document.querySelectorAll('.border.border-gray-200.rounded-lg button').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Toggle content visibility
+            content.classList.toggle('hidden');
+            
+            // Toggle icon rotation
+            icon.classList.toggle('rotate-180');
+            
+            // Toggle active state styling
+            button.classList.toggle('bg-gray-50');
+        });
+    });
+    </script>
+</body>
+</html>
